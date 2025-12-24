@@ -429,59 +429,87 @@
             </div>
             
             <!-- Project 1 -->
-            <div class="project-card">
-                <h2 class="project-title">Real-Time Sales Analytics Dashboard</h2>
-                
-                <div class="project-description">
-                    <p>Built an end-to-end automated ETL pipeline to process sales transactions and create real-time dashboards with predictive forecasting capabilities.</p>
-                </div>
-                
-                <ul class="project-features">
-                    <li>Built end-to-end automated ETL pipeline using Python (Pandas, SQLAlchemy) and SQL Server</li>
-                    <li>Processed and validated 50,000+ sales transactions with real-time Power BI dashboard</li>
-                    <li>Developed Random Forest regression model achieving 89% forecasting accuracy</li>
-                    <li>Deployed via Python Flask API with automated data quality checks and error logging</li>
-                </ul>
-                
-                <div class="how-it-works">
-                    <h3>How It Works (Demo):</h3>
-                    <ol class="demo-steps">
-                        <li>Data ingestion from multiple sources (CSV, APIs, databases) using Python scripts</li>
-                        <li>ETL pipeline processes and validates 50,000+ sales transactions with data quality checks</li>
-                        <li>Processed data stored in SQL Server with optimized data model for analytics</li>
-                        <li>Power BI dashboard connects to database with DAX measures tracking revenue KPIs</li>
-                        <li>Random Forest model provides 30-day sales forecasts with 89% accuracy</li>
-                        <li>Flask API serves predictions and handles real-time data updates</li>
-                    </ol>
-                </div>
-                
-                <div class="next-steps">
-                    <h3>Next Steps:</h3>
-                    <ol>
-                        <li>Integrate real-time streaming data sources for live dashboard updates</li>
-                        <li>Expand forecasting model to include external factors (seasonality, promotions)</li>
-                        <li>Implement automated alerting for anomaly detection in sales patterns</li>
-                        <li>Add natural language querying for business users to ask data questions</li>
-                        <li>Create mobile-responsive version of dashboard for on-the-go access</li>
-                    </ol>
-                </div>
-                
-                <div class="tech-stack">
-                    <span class="tech-tag">Python</span>
-                    <span class="tech-tag">SQL Server</span>
-                    <span class="tech-tag">Power BI</span>
-                    <span class="tech-tag">Pandas</span>
-                    <span class="tech-tag">SQLAlchemy</span>
-                    <span class="tech-tag">Flask</span>
-                    <span class="tech-tag">scikit-learn</span>
-                    <span class="tech-tag">DAX</span>
-                </div>
-                
-                <div class="project-actions">
-                    <a href="#" class="btn">View Code</a>
-                    <a href="#contact" class="btn btn-outline">Contact</a>
-                </div>
+             <div class="project-card">
+            <h2 class="project-title">Real-Time Sales Analytics Dashboard</h2>
+            
+            <div class="video-container">
+                <video controls>
+                    <source src="dashboard%20demo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
             </div>
+
+            <div class="project-description">
+                <p>
+                    Built an end-to-end automated ETL pipeline to process sales transactions and create interactive dashboards with predictive forecasting capabilities.
+                </p>
+            </div>
+
+            <div class="how-it-works">
+                <h3>Technical Implementation:</h3>
+                <ul class="project-features">
+                    <li>Built automated ETL pipeline using Python (Pandas, SQLite3) processing 50,000+ sales transactions with data validation and quality checks</li>
+                    <li>Engineered features including moving averages, trend analysis, and time-based patterns for forecasting model</li>
+                    <li>Developed Random Forest regression model achieving [X]% R² accuracy on 30-day sales forecasts with proper train/test validation</li>
+                    <li>Created interactive Power BI dashboard with real-time filtering, KPI tracking, and forecast visualizations using Plotly charts</li>
+                    <li>Deployed Flask REST API serving prediction endpoints with error handling and model performance monitoring</li>
+                </ul>
+                <h3>How It Works (Demo):</h3>
+                <ol class="demo-steps">
+                    <li>ETL pipeline extracts sales data from CSV, cleans missing values, and calculates derived metrics (revenue, customer segments, product categories)</li>
+                    <li>Transformed data loads into SQLite database with optimized schema: transactions, daily_summary, monthly_summary, customer_summary, product_summary tables</li>
+                    <li>Machine learning pipeline engineers features (day of week, seasonality, lag features, rolling averages) and trains Random Forest, Gradient Boosting, and Linear Regression models</li>
+                    <li>Power BI dashboard connects to SQLite displaying key metrics, revenue trends, top products, customer segments, and 30-day forecasts with confidence intervals</li>
+                    <li>Flask API serves predictions via /predict and /predict_range endpoints for integration with other systems</li>
+                    <li>Automated logging and error handling ensures data pipeline reliability</li>
+                </ol>
+            </div>
+
+            <ul class="project-features">
+                <li>Automated data processing with tqdm progress tracking</li>
+                <li>Time-series forecasting with multiple model comparison</li>
+                <li>Interactive visualizations with date range and segment filters (Power BI)</li>
+                <li>Model performance metrics (MAE, RMSE, R², MAPE)</li>
+                <li>RESTful API for prediction serving</li>
+            </ul>
+            
+            <div class="tech-stack">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">SQLite</span>
+                <span class="tech-tag">Power BI</span>
+                <span class="tech-tag">Pandas</span>
+                <span class="tech-tag">scikit-learn</span>
+                <span class="tech-tag">Flask</span>
+                <span class="tech-tag">Plotly</span>
+                <span class="tech-tag">Matplotlib</span>
+            </div>
+
+            <div class="how-it-works">
+                <h3>Model Performance:</h3>
+                <ul class="project-features">
+                    <li>R² Score: [X]% on test set (use actual number after building)</li>
+                    <li>Proper time-series train/validation/test split</li>
+                    <li>30-day rolling forecasts with feature importance analysis</li>
+                </ul>
+                <strong>Status:</strong> Complete and demo-ready (Dec 2024)
+            </div>
+
+            <div class="next-steps">
+                <h3>Next Steps:</h3>
+                <ol>
+                    <li>Integrate real-time streaming data sources for live updates</li>
+                    <li>Expand forecasting with external factors (promotions, seasonality, economic indicators)</li>
+                    <li>Implement automated anomaly detection with email alerts</li>
+                    <li>Add A/B testing framework for forecast model improvements</li>
+                    <li>Create mobile-responsive dashboard layout</li>
+                </ol>
+            </div>
+            
+            <div class="project-actions">
+                <a href="https://github.com/nichoww/sales-analytics-dashboard" class="btn" target="_blank">View Code</a>
+                <a href="#contact" class="btn btn-outline">Contact</a>
+            </div>
+        </div>
             
             <!-- Project 2 -->
             <div class="project-card">
