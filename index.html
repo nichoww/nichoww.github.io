@@ -207,6 +207,21 @@
             margin-top: 2rem;
         }
         
+        .video-container {
+            position: relative;
+            width: 100%;
+            margin-bottom: 1.5rem;
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: #000;
+        }
+
+        .video-container video {
+            width: 100%;
+            display: block;
+            border-radius: 8px;
+        }
+        
         .btn {
             display: inline-block;
             background-color: var(--accent-color);
@@ -334,6 +349,84 @@
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
+            <!-- Trading Bot Demo -->
+            <div class="project-card">
+                <h2 class="project-title">Automated Stock Trading Bot</h2>
+                
+                <div class="video-container">
+                    <video controls>
+                        <source src="trading%20bot%20demo.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                
+                <div class="project-description">
+                    <p>This is a fully automated real-time stock trading bot that connects to the Alpaca brokerage API for paper trading (simulated trading with real market data). The bot monitors 20 popular stocks (AAPL, NVDA, TSLA, META, GOOGL, AMZN, etc.) and autonomously executes buy/sell orders based on technical analysis signals.</p>
+                </div>
+                
+                <div class="how-it-works">
+                    <h3>Key Workflow:</h3>
+                    <ol class="demo-steps">
+                        <li>Fetches live market data every 60 seconds from Alpaca</li>
+                        <li>Generates trading signals using Moving Average (MA) crossover strategy (10-period fast MA vs 30-period slow MA)</li>
+                        <li>Calculates position sizes using ATR (Average True Range) to risk only 2% of portfolio per trade</li>
+                        <li>Places limit orders with automatic fallback to market orders if unfilled after 30 seconds</li>
+                        <li>Manages risk with dynamic trailing stops that ratchet up (never down) as prices rise</li>
+                        <li>Persists portfolio state to JSON so trades survive restarts</li>
+                        <li>Logs all activity to CSV audit trails for analysis</li>
+                    </ol>
+                </div>
+                
+                <ul class="project-features">
+                    <li>Real-time 60-second trading loop</li>
+                    <li>ATR-based dynamic position sizing (risk 2% per trade)</li>
+                    <li>Trailing stops that only move up</li>
+                    <li>Limit orders with market order fallback</li>
+                    <li>Duplicate order prevention</li>
+                    <li>Portfolio state persistence across restarts</li>
+                    <li>Comprehensive audit logging to CSV</li>
+                    <li>Optional ML model signals (pre-trained Random Forest/Gradient Boosting)</li>
+                    <li>Backtesting engine for strategy validation</li>
+                    <li>Feature engineering with 25+ technical indicators (RSI, MACD, Bollinger Bands, etc.)</li>
+                    <li>Console dashboard for monitoring</li>
+                    <li>Test mode vs live mode toggle</li>
+                    <li>Parquet data storage for efficiency</li>
+                </ul>
+                
+                <div class="tech-stack">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Alpaca API</span>
+                    <span class="tech-tag">scikit-learn</span>
+                    <span class="tech-tag">TA-Lib</span>
+                    <span class="tech-tag">pandas</span>
+                    <span class="tech-tag">NumPy</span>
+                    <span class="tech-tag">SQLite</span>
+                    <span class="tech-tag">yfinance</span>
+                    <span class="tech-tag">matplotlib</span>
+                    <span class="tech-tag">Jupyter</span>
+                </div>
+                
+                <div class="next-steps">
+                    <h3>Next Steps / Future Improvements:</h3>
+                    <ol>
+                        <li>Live Trading Integration - Switch from paper trading to live trading with real money</li>
+                        <li>Enhanced ML Signals - Train deep learning models (LSTM, Transformer) and add sentiment analysis</li>
+                        <li>More Signal Strategies - Add RSI-based signals, Bollinger Band breakouts, volume-based signals</li>
+                        <li>Improved Risk Management - Portfolio-level correlation checks, maximum drawdown circuit breaker</li>
+                        <li>Web Dashboard - Build real-time web UI with Flask/React and mobile notifications</li>
+                        <li>Performance Analytics - Sharpe ratio tracking, win rate metrics, automated performance reports</li>
+                        <li>Options Trading - Extend bot to trade options for hedging</li>
+                        <li>Cloud Deployment - Deploy to AWS/GCP for 24/7 operation with proper logging</li>
+                        <li>Multi-Timeframe Analysis - Confirm signals across multiple timeframes before trading</li>
+                    </ol>
+                </div>
+                
+                <div class="project-actions">
+                    <a href="#" class="btn">View Code</a>
+                    <a href="#contact" class="btn btn-outline">Contact</a>
+                </div>
+            </div>
+            
             <!-- Project 1 -->
             <div class="project-card">
                 <h2 class="project-title">Real-Time Sales Analytics Dashboard</h2>
