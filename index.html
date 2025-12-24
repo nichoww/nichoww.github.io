@@ -146,7 +146,7 @@
         }
         
         .project-features li:before {
-            content: "•";
+            content: "\2022";
             color: var(--accent-color);
             position: absolute;
             left: 0;
@@ -321,7 +321,7 @@
                 <div class="logo">Nicholas Wang</div>
                 <ul class="nav-links">
                     <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="mailto:n66wang@uwaterloo.ca">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -332,16 +332,16 @@
         <div class="container">
             <h1>Nicholas Wang</h1>
             <div class="intro">
-                <p>Hi, I am Nicholas and I have a bachelor's degree graduating from The University of Waterloo for Honours Liberal Arts with management studies minor and quantititave analytical focus. I have experience in ETL pipeline development, business intelligence, and building full-stack data systems that support strategic decision-making.</p>
-                <p>I have a passion for creating reliable data pipelines and analytical solutions that transform raw data into actionable insights. I care about data accuracy, clear visualizations, and building automated workflows for maximum impact.</p>
-                <p>In my personal life, I like to train my body at the gym and pursue new life skills. I consistently train and learn everyday in order to improve myself, and to prove thhat it is important to be a well-rounded person.</p>
+                <p>Hi, I am Nicholas and I have a bachelor's degree graduating from The University of Waterloo for Honours Liberal Arts with management studies minor and quantititave analytical focus.[...]
+                <p>I have a passion for creating reliable data pipelines and analytical solutions that transform raw data into actionable insights. I care about data accuracy, clear visualizations, an[...]
+                <p>In my personal life, I like to train my body at the gym and pursue new life skills. I consistently train and learn everyday in order to improve myself, and to prove thhat it is impo[...]
             </div>
             
             <div class="section-divider">WHAT YOU'LL SEE BELOW</div>
             
             <p>Automated Stock Trading Bot — Real-time trading with Alpaca API, ML signals, dynamic position sizing, and comprehensive risk management.</p>
             <p>Real-Time Sales Analytics Dashboard — ETL pipeline, SQL processing, Power BI visualization, and predictive forecasting.</p>
-            <p>Customer Segmentation & Churn Prediction — RFM analysis, XGBoost classification, and Flask API deployment.</p>
+            <!-- Removed Customer Segmentation & Churn Prediction bullet point -->
             
             <div class="scroll-indicator">SCROLL TO PROJECTS</div>
         </div>
@@ -362,7 +362,7 @@
                 </div>
                 
                 <div class="project-description">
-                    <p>This is a fully automated real-time stock trading bot that connects to the Alpaca brokerage API for paper trading (simulated trading with real market data). The bot monitors 20 stocks simultaneously and executes trades based on technical analysis signals.</p>
+                    <p>This is a fully automated real-time stock trading bot that connects to the Alpaca brokerage API for paper trading (simulated trading with real market data). The bot monitors 20 [..</p>
                 </div>
                 
                 <div class="how-it-works">
@@ -458,7 +458,7 @@
                 <ol class="demo-steps">
                     <li>ETL pipeline extracts sales data from CSV, cleans missing values, and calculates derived metrics (revenue, customer segments, product categories)</li>
                     <li>Transformed data loads into SQLite database with optimized schema: transactions, daily_summary, monthly_summary, customer_summary, product_summary tables</li>
-                    <li>Machine learning pipeline engineers features (day of week, seasonality, lag features, rolling averages) and trains Random Forest, Gradient Boosting, and Linear Regression models</li>
+                    <li>Machine learning pipeline engineers features (day of week, seasonality, lag features, rolling averages) and trains Random Forest, Gradient Boosting, and Linear Regression model[..</li>
                     <li>Power BI dashboard connects to SQLite displaying key metrics, revenue trends, top products, customer segments, and 30-day forecasts with confidence intervals</li>
                     <li>Flask API serves predictions via /predict and /predict_range endpoints for integration with other systems</li>
                     <li>Automated logging and error handling ensures data pipeline reliability</li>
@@ -510,60 +510,7 @@
                 <a href="#contact" class="btn btn-outline">Contact</a>
             </div>
         </div>
-            
-            <!-- Project 2 -->
-            <div class="project-card">
-                <h2 class="project-title">Customer Segmentation & Churn Prediction</h2>
-                
-                <div class="project-description">
-                    <p>Engineered an automated data pipeline for customer segmentation and developed a churn prediction system to identify high-risk customer segments.</p>
-                </div>
-                
-                <ul class="project-features">
-                    <li>Engineered automated Python/SQL data pipeline analyzing 10,000+ customer records</li>
-                    <li>Implemented RFM segmentation methodology for customer categorization</li>
-                    <li>Built XGBoost classification model achieving 84% churn prediction accuracy</li>
-                    <li>Deployed Flask API serving real-time predictions integrated with Tableau dashboard</li>
-                </ul>
-                
-                <div class="how-it-works">
-                    <h3>How It Works (Demo):</h3>
-                    <ol class="demo-steps">
-                        <li>Customer data is extracted from CRM and transaction databases</li>
-                        <li>RFM (Recency, Frequency, Monetary) analysis segments customers into categories</li>
-                        <li>XGBoost model analyzes behavioral patterns to predict churn probability</li>
-                        <li>Flask API receives customer data and returns churn risk scores in real-time</li>
-                        <li>Tableau dashboard visualizes retention metrics and customer lifetime value</li>
-                        <li>Marketing teams receive alerts for high-risk customers with suggested actions</li>
-                    </ol>
-                </div>
-                
-                <div class="next-steps">
-                    <h3>Next Steps:</h3>
-                    <ol>
-                        <li>Integrate with marketing automation platforms for targeted campaigns</li>
-                        <li>Develop personalized retention offers based on churn probability and customer value</li>
-                        <li>Add A/B testing framework to measure effectiveness of retention strategies</li>
-                        <li>Expand model to include customer sentiment analysis from support interactions</li>
-                        <li>Create self-service dashboard for business users to simulate retention scenarios</li>
-                    </ol>
-                </div>
-                
-                <div class="tech-stack">
-                    <span class="tech-tag">Python</span>
-                    <span class="tech-tag">SQL</span>
-                    <span class="tech-tag">XGBoost</span>
-                    <span class="tech-tag">Flask</span>
-                    <span class="tech-tag">Tableau</span>
-                    <span class="tech-tag">RFM Analysis</span>
-                    <span class="tech-tag">scikit-learn</span>
-                </div>
-                
-                <div class="project-actions">
-                    <a href="#" class="btn">View Code</a>
-                    <a href="#contact" class="btn btn-outline">Contact</a>
-                </div>
-            </div>
+            <!-- Removed Customer Segmentation & Churn Prediction Project Card -->
         </div>
     </section>
 
@@ -572,11 +519,10 @@
         <div class="container">
             <h2>Get in touch</h2>
             <div class="contact-email">n66wang@uwaterloo.ca</div>
-            
             <div class="contact-links">
-                <a href="#">Download Resume</a>
-                <a href="#">GitHub</a>
-                <a href="#">LinkedIn</a>
+                <a href="Nicholas Wang Resume.docx" download>Download Resume</a>
+                <a href="mailto:n66wang@uwaterloo.ca">GitHub</a>
+                <a href="https://www.linkedin.com/in/nicholas-wang-6330b1215/" target="_blank">LinkedIn</a>
             </div>
         </div>
     </section>
